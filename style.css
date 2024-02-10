@@ -1,0 +1,48 @@
+h4 {
+  margin: 0;
+}
+
+#table {
+  width: 300px;
+  border: 1px black solid;
+  padding: 10px;
+}
+
+.persons {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.items {
+  margin: 5px;
+}
+
+.table-title {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px;
+}
+
+.items {
+  display: flex;
+  margin: 5px;
+  justify-content: space-between;
+}
+
+.likes {
+  padding-right: 50px;
+}
+
+
+#up:checked~#table>.persons>.items {
+  order: var(--likes);
+}
+
+#down:checked~#table>.persons>.items {
+  order: var(--likes);
+}
+
+#down:checked~#table>.persons {
+  flex-direction: column-reverse;
+}
