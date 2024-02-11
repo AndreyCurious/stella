@@ -9,7 +9,7 @@
 
 <body>
   <form action="script.php" method="POST">
-    <input type="number" name="input" id="">
+    <input type="number" name="input">
     <input name="submit" type="submit" value="Выполнить" />
   </form>
 </body>
